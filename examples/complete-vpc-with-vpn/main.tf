@@ -74,7 +74,7 @@ module "kms" {
 
 module "vpc" {
   source                                          = "squareops/vpc/aws"
-  version                                         = "3.3.6"
+  version                                         = "3.4.2"
   name                                            = local.name
   region                                          = local.region
   vpc_cidr                                        = local.vpc_cidr
