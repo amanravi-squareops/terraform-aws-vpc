@@ -83,6 +83,7 @@ module "vpc" {
   vpn_key_pair_name                               = local.vpn_server_enabled ? module.key_pair_vpn[0].key_pair_name : null
   availability_zones                              = local.availability_zones
   vpn_server_enabled                              = local.vpn_server_enabled
+  kms_key_arn                                     = module.kms.key_arn
   intra_subnet_enabled                            = true
   public_subnet_enabled                           = true
   auto_assign_public_ip                           = true
